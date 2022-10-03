@@ -2,8 +2,10 @@ from fastapi import FastAPI
 import requests
 app = FastAPI()
 
-#   RGB2DMC
-#   RGB 코드로 가장 유사한 십자수 실을 찾아준다.
+#   App Name : RGB2DMC
+#   Description : RGB 코드로 가장 유사한 십자수 실을 찾아 준다.
+#   Input data : RGB code ex) (255,255,255)
+#   Output data : Floss, Description, RGB Code(Hexadecimal),(Picture of Color)
 
 
 @app.get("/rgb2dmc")
