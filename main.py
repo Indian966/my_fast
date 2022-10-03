@@ -11,6 +11,7 @@ async def root():
     return {"message": "Hello World"}
 
 
-@app.post("/index/")
-async def say_hello(requset):
-    return {"message": "Hello {name}"}
+@app.post("/rgb2dmc")
+async def say_hello(r : int, g: int, b: int):
+    rgb_code = (r, g, b)
+    return {"message": f"Hello {rgb_code}"}
